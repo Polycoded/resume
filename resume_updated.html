@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Poly - Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Lato', sans-serif; background: #e8e8e8; display: flex; justify-content: center; padding: 40px 20px; color: #2c2c2c; }
+.resume { background: #fff; width: 800px; padding: 48px 52px; box-shadow: 0 2px 18px rgba(0,0,0,0.15); }
+
+.header { text-align: center; margin-bottom: 24px; }
+.header h1 { font-family: 'EB Garamond', serif; font-size: 32px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #1a1a1a; margin-bottom: 8px; }
+.header .contact { font-size: 12.5px; color: #444; letter-spacing: 0.3px; }
+.header .contact span { margin: 0 8px; color: #aaa; }
+
+.section { margin-bottom: 18px; }
+.section-title { font-family: 'EB Garamond', serif; font-size: 15px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #1a1a1a; padding-bottom: 4px; border-bottom: 1.5px solid #bbb; margin-bottom: 12px; }
+p, li { font-size: 12.5px; line-height: 1.55; color: #2c2c2c; }
+
+.summary-text { font-size: 12.5px; line-height: 1.65; }
+
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 30px; list-style: none; }
+.skills-grid li::before { content: "• "; }
+
+.exp-entry { margin-bottom: 16px; display: flex; gap: 20px; }
+.exp-left { min-width: 195px; max-width: 195px; }
+.exp-left .company { font-weight: 700; }
+.exp-left .title { font-weight: 700; margin-top: 2px; }
+.exp-left .dates { font-style: italic; font-size: 12px; color:#555;}
+.exp-right ul { list-style:none; padding-left:0;}
+.exp-right ul li { padding-left:14px; text-indent:-14px; margin-bottom:4px;}
+.exp-right ul li::before { content:"• "; }
+
+.edu-entry { display:flex; gap:20px; margin-bottom:10px;}
+.edu-left { min-width:195px;}
+.edu-left .school { font-weight:700;}
+.edu-left .degree { font-style:italic;}
+.edu-right ul { list-style:none; padding-left:0;}
+.edu-right ul li { padding-left:14px; text-indent:-14px;}
+.edu-right ul li::before { content:"• "; }
+
+.list-section ul { list-style:none; padding-left:0;}
+.list-section ul li { padding-left:14px; text-indent:-14px; margin-bottom:5px;}
+.list-section ul li::before { content:"• "; }
+</style>
+</head>
+<body>
+<div class="resume">
+
+<div class="header">
+<h1>John Poly</h1>
+<div class="contact">
+johnpoly105@gmail.com <span>|</span>9074133796<span>|</span>github.com/Polycoded <span>|</span>linkedin.com/in/johnpoly
+</div>
+</div>
+
+<!-- Everything below unchanged -->
+
+<div class="section">
+<div class="section-title">Summary</div>
+<p class="summary-text">
+Second-year B.Tech Computer Science student and Reliance Foundation Scholar specializing in machine learning, data science, and object-oriented systems. Experience building applied ML pipelines, medical segmentation systems, anomaly detection frameworks, and backend-integrated AI applications with strong Python foundations.
+</p>
+</div>
+
+<div class="section">
+<div class="section-title">Skills</div>
+<ul class="skills-grid">
+<li>Machine learning and data science</li>
+<li>C and C++</li>
+<li>AI systems development</li>
+<li>LangChain and FastAPI</li>
+<li>Scikit-learn and TensorFlow</li>
+<li>Git and GitHub</li>
+<li>PyTorch and MONAI</li>
+<li>Regression modeling techniques</li>
+<li>NumPy and Pandas</li>
+<li>Retrieval-augmented generation</li>
+<li>Python and Java</li>
+<li>CrewAI</li>
+<li>Object-oriented programming</li>
+</ul>
+</div>
+
+<div class="section">
+<div class="section-title">Experience</div>
+
+<div class="exp-entry">
+<div class="exp-left">
+<div class="company">Kiventics</div>
+<div class="title">Machine Learning Engineer</div>
+<div class="dates">12/2025 - Current</div>
+</div>
+<div class="exp-right">
+<ul>
+<li>Integrated MONAI Auto3DSeg segmentation into production inference services using FastAPI.</li>
+<li>Developed CT skull segmentation pipeline with DICOM normalization and scalable deployment.</li>
+<li>Optimized throughput and service reliability for clinical imaging workflows.</li>
+<li>Built async endpoints with background tracking for robust processing pipelines.</li>
+</ul>
+</div>
+</div>
+
+<div class="exp-entry">
+<div class="exp-left">
+<div class="company">IEEE Computer Society</div>
+<div class="title">Senior Core Member</div>
+<div class="dates">04/2025 - Current</div>
+</div>
+<div class="exp-right">
+<ul>
+<li>Collaborated on AI/ML R&D initiatives and technical project execution.</li>
+<li>Coordinated technical events promoting cross-domain innovation and knowledge sharing.</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+<div class="section-title">Education</div>
+<div class="edu-entry">
+<div class="edu-left">
+<div class="school">Vellore Institute of Technology</div>
+<div class="degree">B.Tech Computer Science Engineering</div>
+</div>
+<div class="edu-right">
+<ul>
+<li><strong>Reliance Foundation Undergraduate Scholar</strong></li>
+<li>GPA: 8.71</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section list-section">
+<div class="section-title">Projects</div>
+<ul>
+<li><strong>ForensIQ</strong> — Built AI cyber-forensics framework using PyTorch ensemble anomaly detection on UNSW-NB15 dataset. Generated attack narratives mapped to MITRE ATT&CK and ranked <b>Top 50 nationally</b>.</li>
+<li><strong>Skull Segmentation API</strong> — Developed FastAPI backend enabling CT segmentation using pretrained MONAI model with GPU inference. Implemented medical volume normalization and visualization tooling.</li>
+<li><strong>Speech Enhancement</strong> — Fine-tuned MetricGAN+ for multilingual Indian speech denoising across multiple noise environments. Served inference via backend APIs and interactive audio demos.</li>
+<li><strong>Autonomous Market Analyst</strong> — Built CrewAI multi-agent pipeline automating market research and report generation workflows. Integrated search tools and sequential orchestration for structured output.</li>
+<li><strong>RAG Chatbot</strong> — Developed retrieval-augmented chatbot using embedding search and document chunk pipelines. Implemented semantic retrieval and response generation integration.</li>
+</ul>
+</div>
+  <!-- CERTIFICATIONS -->
+  <div class="section list-section">
+    <div class="section-title">Certifications</div>
+    <ul>
+      <li>IBM Data Science Professional Certificate</li>
+      <li>Machine Learning - DeepLearning.AI</li>
+      <li>Generative AI for Data Scientists — IBM</li>
+    </ul>
+  </div>
+<div class="section">
+<div class="section-title">Publications</div>
+<p>Machine Learning-Based Energy Complexity Analysis for Predicting Optimal Data Structures in Work-Specific Efficiency — IEOM Society International, 11/06/25</p>
+</div>
+
+<div class="section list-section">
+<div class="section-title">Awards</div>
+<ul>
+<li><strong>Reliance Foundation Undergraduate Scholar</strong></li>
+<li>CSIC 1.0 — Top 50 Selection</li>
+<li>IEEE CS Internal Hackathon — 1st Prize</li>
+</ul>
+</div>
+
+<div class="section list-section">
+<div class="section-title">Volunteering</div>
+<ul>
+<li>Perplexity Campus Partner</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>
